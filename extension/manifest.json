@@ -1,0 +1,20 @@
+{
+  "name": "Lyrics Bird",
+  "description":
+    "Lyrics Bird shows music lyrics on Youtube as the first comment",
+  "version": "1.0",
+  "homepage_url": "https://github.com/iamtekeste/lyrics-bird.git",
+  "manifest_version": 2,
+  "icons": {
+    "128": "128-icon.png"
+  },
+  "permissions": ["activeTab", "*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["*.youtube.com/*"],
+      "css": ["content.css"],
+      "js": ["bundle.js"]
+    }
+  ]
+}
