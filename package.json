@@ -1,5 +1,5 @@
 {
-  "name": "Lyrics Bird",
+  "name": "LyricsBird",
   "version": "1.0.0",
   "scripts": {
     "build": "babel extension/content.js --watch --out-file extension/bundle.js"
