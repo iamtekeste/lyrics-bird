@@ -2,8 +2,17 @@
 * Lyrics Bird
 */
 
-var LyricsBird = {};
+class LyricsBird {
+  init() {
+    console.log(this.getMusicID());
+  }
+  getMusicID() {
+    return window.location.search.split("&")[0].split("=")[1];
+  }
+  getMusicData() {}
+}
 
 window.onload = () => {
-  LyricsBird.init();
+  const myLyricsBird = new LyricsBird();
+  myLyricsBird.init();
 };
