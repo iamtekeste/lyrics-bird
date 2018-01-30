@@ -8,11 +8,11 @@
   "icons": {
     "128": "128-icon.png"
   },
-  "permissions": ["activeTab", "*.youtube.com/*"],
+  "permissions": ["activeTab", "https://*.youtube.com/watch*"],
   "content_scripts": [
     {
       "run_at": "document_start",
-      "matches": ["*.youtube.com/*"],
+      "matches": ["https://*.youtube.com/watch*"],
       "css": ["content.css"],
       "js": ["bundle.js"]
     }
